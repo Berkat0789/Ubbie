@@ -18,6 +18,7 @@
 		B4E633AC20C4698300D147C0 /* roundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E633AB20C4698300D147C0 /* roundedShadowView.swift */; };
 		B4E633AE20C46A8800D147C0 /* circleViewWithBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E633AD20C46A8800D147C0 /* circleViewWithBorder.swift */; };
 		B4E633B020C46C2100D147C0 /* roundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E633AF20C46C2100D147C0 /* roundedShadowButton.swift */; };
+		B4E633B220C488EA00D147C0 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E633B120C488EA00D147C0 /* NavController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		B4E633AB20C4698300D147C0 /* roundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedShadowView.swift; sourceTree = "<group>"; };
 		B4E633AD20C46A8800D147C0 /* circleViewWithBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleViewWithBorder.swift; sourceTree = "<group>"; };
 		B4E633AF20C46C2100D147C0 /* roundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedShadowButton.swift; sourceTree = "<group>"; };
+		B4E633B120C488EA00D147C0 /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
 		EBE72596E62BC9CCF99D1A91 /* Pods-Ubbie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ubbie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ubbie/Pods-Ubbie.release.xcconfig"; sourceTree = "<group>"; };
 		F1B6983A421CD53970CD6508 /* Pods_Ubbie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ubbie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E633A720C465C000D147C0 /* HomeVC.swift */,
+				B4E633B120C488EA00D147C0 /* NavController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -214,6 +218,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -254,6 +259,7 @@
 				B4E6339120C43D6400D147C0 /* AppDelegate.swift in Sources */,
 				B4E633AE20C46A8800D147C0 /* circleViewWithBorder.swift in Sources */,
 				B4E633A620C4630600D147C0 /* gradientView.swift in Sources */,
+				B4E633B220C488EA00D147C0 /* NavController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,9 +10,14 @@ import UIKit
 
 class roundedShadowButton: UIButton {
 
+    
+    override func awakeFromNib() {
+     setupView()
+    }
     var originalSize: CGRect?
     func setupView() {
         originalSize = self.frame
+        self.clipsToBounds = true
         self.layer.cornerRadius = 5.0
         self.layer.shadowRadius = 10.0
         self.layer.shadowColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)

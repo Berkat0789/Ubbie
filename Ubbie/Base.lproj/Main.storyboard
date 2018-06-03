@@ -30,6 +30,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asU-0K-aLo">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
                                                 <state key="normal" image="menuSliderBtn"/>
+                                                <connections>
+                                                    <segue destination="H63-Q7-V8p" kind="presentation" id="Pfp-o3-uJK"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GbO-yh-pLN">
                                                 <rect key="frame" x="122" y="0.0" width="89.5" height="40"/>
@@ -69,7 +72,7 @@
                                     <constraint firstAttribute="trailing" secondItem="oqQ-mB-vVj" secondAttribute="trailing" constant="16" id="pMr-Zv-8U5"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TF2-Ws-gen" customClass="RevealingSplashView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TF2-Ws-gen" customClass="roundedShadowView" customModule="Ubbie" customModuleProvider="target">
                                 <rect key="frame" x="16" y="78" width="343" height="80"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="id8-ps-qnl">
@@ -148,16 +151,40 @@
                                     <constraint firstItem="id8-ps-qnl" firstAttribute="top" secondItem="TF2-Ws-gen" secondAttribute="top" constant="9" id="uKU-jz-W7b"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLi-Dy-JLz">
+                                <rect key="frame" x="297" y="529" width="62" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="D92-Tv-h8S"/>
+                                    <constraint firstAttribute="height" constant="62" id="Y8d-XC-53K"/>
+                                </constraints>
+                                <state key="normal" image="centerMapBtn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6S-bb-7MB" customClass="roundedShadowButton" customModule="Ubbie" customModuleProvider="target">
+                                <rect key="frame" x="16" y="599" width="343" height="60"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="WSH-YF-E83"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Request Ride">
+                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wlk-0f-FQc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="07V-fo-kHh"/>
                             <constraint firstItem="lUE-jq-Idm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9Ey-KL-0AQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JLi-Dy-JLz" secondAttribute="trailing" constant="16" id="9lA-Se-bHY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TF2-Ws-gen" secondAttribute="trailing" constant="16" id="DYg-AL-Nk3"/>
                             <constraint firstItem="lUE-jq-Idm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EU5-7K-lpM"/>
                             <constraint firstItem="TF2-Ws-gen" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ggd-KP-CLy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M6S-bb-7MB" secondAttribute="trailing" constant="16" id="Nwj-8X-dPt"/>
+                            <constraint firstItem="M6S-bb-7MB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="OyE-aL-8UT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M6S-bb-7MB" secondAttribute="bottom" constant="8" id="TSs-Uc-cUt"/>
                             <constraint firstItem="TF2-Ws-gen" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="adb-fR-uAs"/>
                             <constraint firstItem="wlk-0f-FQc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="chC-OA-ICJ"/>
+                            <constraint firstItem="M6S-bb-7MB" firstAttribute="top" secondItem="JLi-Dy-JLz" secondAttribute="bottom" constant="8" id="gZq-rG-uSz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wlk-0f-FQc" secondAttribute="bottom" id="hWy-RI-zZE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wlk-0f-FQc" secondAttribute="trailing" id="vpw-ez-g3W"/>
                             <constraint firstItem="lUE-jq-Idm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xqp-ud-Bb7"/>
@@ -170,10 +197,60 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="898" y="-548"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="m9v-A8-UNS">
+            <objects>
+                <navigationController id="H63-Q7-V8p" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aHk-jz-L5A">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="epg-T4-2eD" kind="relationship" relationship="rootViewController" id="noQ-Ox-n4I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4O-ap-tu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="271"/>
+        </scene>
+        <!--Nav Controller-->
+        <scene sceneID="Iht-Rz-fBx">
+            <objects>
+                <viewController id="epg-T4-2eD" customClass="NavController" customModule="Ubbie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nuj-W6-afp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zG7-JN-OAt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="cfZ-Oc-D5q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zG7-JN-OAt" firstAttribute="trailing" secondItem="Whg-Go-u1O" secondAttribute="trailing" id="8rY-mn-ujV"/>
+                            <constraint firstItem="zG7-JN-OAt" firstAttribute="top" secondItem="Nuj-W6-afp" secondAttribute="top" id="DNG-VH-Yl2"/>
+                            <constraint firstItem="zG7-JN-OAt" firstAttribute="leading" secondItem="Whg-Go-u1O" secondAttribute="leading" id="v7G-si-ytI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Whg-Go-u1O"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fcz-FZ-qZl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Snn-SY-Ws7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1805.5999999999999" y="269.41529235382313"/>
         </scene>
     </scenes>
     <resources>
+        <image name="centerMapBtn" width="62" height="62"/>
         <image name="menuSliderBtn" width="30" height="24"/>
         <image name="pexels-photo-24821" width="2992" height="2000"/>
     </resources>

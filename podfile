@@ -9,7 +9,7 @@ pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'RevealingSplashView'
 pod 'Firebase'
-
+pod 'SideMenu'
   # Pods for Ubbie
 
 end
