@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40D0A1655EF8D14ABF703C9D /* Pods_Ubbie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B6983A421CD53970CD6508 /* Pods_Ubbie.framework */; };
 		B4E6339120C43D6400D147C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E6339020C43D6400D147C0 /* AppDelegate.swift */; };
 		B4E6339320C43D6400D147C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E6339220C43D6400D147C0 /* ViewController.swift */; };
 		B4E6339620C43D6400D147C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E6339420C43D6400D147C0 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C397CAF29181DECF99B8E10 /* Pods-Ubbie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ubbie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ubbie/Pods-Ubbie.debug.xcconfig"; sourceTree = "<group>"; };
 		B4E6338D20C43D6400D147C0 /* Ubbie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ubbie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E6339020C43D6400D147C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E6339220C43D6400D147C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		B4E6339720C43D6600D147C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4E6339A20C43D6600D147C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4E6339C20C43D6600D147C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE72596E62BC9CCF99D1A91 /* Pods-Ubbie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ubbie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ubbie/Pods-Ubbie.release.xcconfig"; sourceTree = "<group>"; };
+		F1B6983A421CD53970CD6508 /* Pods_Ubbie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ubbie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40D0A1655EF8D14ABF703C9D /* Pods_Ubbie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C7219B4C5263DB3C05AB686 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C397CAF29181DECF99B8E10 /* Pods-Ubbie.debug.xcconfig */,
+				EBE72596E62BC9CCF99D1A91 /* Pods-Ubbie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B4E6338420C43D6400D147C0 = {
 			isa = PBXGroup;
 			children = (
 				B4E6338F20C43D6400D147C0 /* Ubbie */,
 				B4E6338E20C43D6400D147C0 /* Products */,
+				6C7219B4C5263DB3C05AB686 /* Pods */,
+				EB2CDF6034FDFDC1201369D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = Ubbie;
 			sourceTree = "<group>";
 		};
+		EB2CDF6034FDFDC1201369D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1B6983A421CD53970CD6508 /* Pods_Ubbie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4E6339F20C43D6600D147C0 /* Build configuration list for PBXNativeTarget "Ubbie" */;
 			buildPhases = (
+				C40DB5D704CD05EB14921FEF /* [CP] Check Pods Manifest.lock */,
 				B4E6338920C43D6400D147C0 /* Sources */,
 				B4E6338A20C43D6400D147C0 /* Frameworks */,
 				B4E6338B20C43D6400D147C0 /* Resources */,
+				187B9140BCFF3AEF49964068 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		187B9140BCFF3AEF49964068 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ubbie/Pods-Ubbie-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ubbie/Pods-Ubbie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C40DB5D704CD05EB14921FEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ubbie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4E6338920C43D6400D147C0 /* Sources */ = {
@@ -278,6 +351,7 @@
 		};
 		B4E633A020C43D6600D147C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C397CAF29181DECF99B8E10 /* Pods-Ubbie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +370,7 @@
 		};
 		B4E633A120C43D6600D147C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBE72596E62BC9CCF99D1A91 /* Pods-Ubbie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
