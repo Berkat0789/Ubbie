@@ -15,5 +15,9 @@ class NavController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
 
     }
-
+    @IBAction func Login(_ sender: Any) {
+        let loginController = storyboard?.instantiateViewController(withIdentifier: "Login_signupVC") as? loginVC
+         present(loginController!, animated: true, completion: nil)
+    }
+    
 }

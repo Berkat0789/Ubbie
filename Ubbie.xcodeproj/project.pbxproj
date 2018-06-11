@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		40D0A1655EF8D14ABF703C9D /* Pods_Ubbie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B6983A421CD53970CD6508 /* Pods_Ubbie.framework */; };
+		B41595B320CDC308005F8029 /* roundedtextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41595B220CDC308005F8029 /* roundedtextField.swift */; };
+		B41595B520CDC702005F8029 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41595B420CDC702005F8029 /* loginVC.swift */; };
 		B4E6339120C43D6400D147C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E6339020C43D6400D147C0 /* AppDelegate.swift */; };
 		B4E6339620C43D6400D147C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E6339420C43D6400D147C0 /* Main.storyboard */; };
 		B4E6339820C43D6600D147C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E6339720C43D6600D147C0 /* Assets.xcassets */; };
@@ -19,10 +21,17 @@
 		B4E633AE20C46A8800D147C0 /* circleViewWithBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E633AD20C46A8800D147C0 /* circleViewWithBorder.swift */; };
 		B4E633B020C46C2100D147C0 /* roundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E633AF20C46C2100D147C0 /* roundedShadowButton.swift */; };
 		B4E633B220C488EA00D147C0 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E633B120C488EA00D147C0 /* NavController.swift */; };
+		B4F8B67820CDCA8400414D5F /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8B67720CDCA8400414D5F /* KeyboardBoundView.swift */; };
+		B4F8B67A20CDCFBB00414D5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4F8B67920CDCFBB00414D5F /* GoogleService-Info.plist */; };
+		B4F8B67D20CDD17C00414D5F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8B67C20CDD17C00414D5F /* DataService.swift */; };
+		B4F8B68220CE014900414D5F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8B68120CE014900414D5F /* Constants.swift */; };
+		B4F8B68420CE031B00414D5F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8B68320CE031B00414D5F /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C397CAF29181DECF99B8E10 /* Pods-Ubbie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ubbie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ubbie/Pods-Ubbie.debug.xcconfig"; sourceTree = "<group>"; };
+		B41595B220CDC308005F8029 /* roundedtextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedtextField.swift; sourceTree = "<group>"; };
+		B41595B420CDC702005F8029 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		B4E6338D20C43D6400D147C0 /* Ubbie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ubbie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E6339020C43D6400D147C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E6339520C43D6400D147C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,6 +45,11 @@
 		B4E633AD20C46A8800D147C0 /* circleViewWithBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleViewWithBorder.swift; sourceTree = "<group>"; };
 		B4E633AF20C46C2100D147C0 /* roundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedShadowButton.swift; sourceTree = "<group>"; };
 		B4E633B120C488EA00D147C0 /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
+		B4F8B67720CDCA8400414D5F /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		B4F8B67920CDCFBB00414D5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B4F8B67C20CDD17C00414D5F /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B4F8B68120CE014900414D5F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B4F8B68320CE031B00414D5F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		EBE72596E62BC9CCF99D1A91 /* Pods-Ubbie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ubbie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ubbie/Pods-Ubbie.release.xcconfig"; sourceTree = "<group>"; };
 		F1B6983A421CD53970CD6508 /* Pods_Ubbie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ubbie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,6 +96,8 @@
 		B4E6338F20C43D6400D147C0 /* Ubbie */ = {
 			isa = PBXGroup;
 			children = (
+				B4F8B68020CE013300414D5F /* Utilities */,
+				B4F8B67B20CDD16800414D5F /* Services */,
 				B4E633A420C462F000D147C0 /* Model */,
 				B4E633A320C462E200D147C0 /* view */,
 				B4E633A220C462D800D147C0 /* Controller */,
@@ -90,6 +106,7 @@
 				B4E6339720C43D6600D147C0 /* Assets.xcassets */,
 				B4E6339920C43D6600D147C0 /* LaunchScreen.storyboard */,
 				B4E6339C20C43D6600D147C0 /* Info.plist */,
+				B4F8B67920CDCFBB00414D5F /* GoogleService-Info.plist */,
 			);
 			path = Ubbie;
 			sourceTree = "<group>";
@@ -99,6 +116,7 @@
 			children = (
 				B4E633A720C465C000D147C0 /* HomeVC.swift */,
 				B4E633B120C488EA00D147C0 /* NavController.swift */,
+				B41595B420CDC702005F8029 /* loginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -106,11 +124,13 @@
 		B4E633A320C462E200D147C0 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				B4F8B67720CDCA8400414D5F /* KeyboardBoundView.swift */,
 				B4E633A520C4630600D147C0 /* gradientView.swift */,
 				B4E633A920C468E600D147C0 /* roundedImage.swift */,
 				B4E633AB20C4698300D147C0 /* roundedShadowView.swift */,
 				B4E633AD20C46A8800D147C0 /* circleViewWithBorder.swift */,
 				B4E633AF20C46C2100D147C0 /* roundedShadowButton.swift */,
+				B41595B220CDC308005F8029 /* roundedtextField.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -120,6 +140,23 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B4F8B67B20CDD16800414D5F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B4F8B67C20CDD17C00414D5F /* DataService.swift */,
+				B4F8B68320CE031B00414D5F /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B4F8B68020CE013300414D5F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B4F8B68120CE014900414D5F /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		EB2CDF6034FDFDC1201369D7 /* Frameworks */ = {
@@ -191,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4E6339B20C43D6600D147C0 /* LaunchScreen.storyboard in Resources */,
+				B4F8B67A20CDCFBB00414D5F /* GoogleService-Info.plist in Resources */,
 				B4E6339820C43D6600D147C0 /* Assets.xcassets in Resources */,
 				B4E6339620C43D6400D147C0 /* Main.storyboard in Resources */,
 			);
@@ -252,14 +290,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F8B67820CDCA8400414D5F /* KeyboardBoundView.swift in Sources */,
 				B4E633B020C46C2100D147C0 /* roundedShadowButton.swift in Sources */,
 				B4E633AC20C4698300D147C0 /* roundedShadowView.swift in Sources */,
+				B4F8B67D20CDD17C00414D5F /* DataService.swift in Sources */,
+				B41595B320CDC308005F8029 /* roundedtextField.swift in Sources */,
 				B4E633A820C465C000D147C0 /* HomeVC.swift in Sources */,
 				B4E633AA20C468E600D147C0 /* roundedImage.swift in Sources */,
+				B4F8B68220CE014900414D5F /* Constants.swift in Sources */,
 				B4E6339120C43D6400D147C0 /* AppDelegate.swift in Sources */,
+				B41595B520CDC702005F8029 /* loginVC.swift in Sources */,
 				B4E633AE20C46A8800D147C0 /* circleViewWithBorder.swift in Sources */,
 				B4E633A620C4630600D147C0 /* gradientView.swift in Sources */,
 				B4E633B220C488EA00D147C0 /* NavController.swift in Sources */,
+				B4F8B68420CE031B00414D5F /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
